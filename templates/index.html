@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision AI</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+        </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 class="title">Vision AI</h1>
+    <!------------Nav Bar------------>
+    <div class="navbar">
+        <ul class="nav-list">
+            <li>Home</li>
+            
+            <li><a href="{{ url_for('fruitvision') }}">Fruit Vision</a></li>
+            <li><a href="{{ url_for('krishiai') }}">Krishi AI</a></li>
+            <li><a href="{{ url_for('smartscan') }}">Smart Scan Product</a></li>
+
+        </ul>
+
+     
+    </div>
+    <!-----------------------------Main------------------>   
+    <div class="main">
+        <h2>Welcome to Vision AI</h2>
+      
+        <h3> Smart Scan Product</h3>
+        <p>
+          Quickly extract product details like <strong>brand names</strong> and <strong>net weights</strong> from packaging using state-of-the-art OCR technology.
+          Ideal for <em>inventory tracking</em>, <em>retail intelligence</em>, and <em>agri-product analysis</em>.
+        </p>
+      
+        <h3> Fruit Vision</h3>
+        <p>
+          Detect and classify fruits as <strong>fresh</strong> or <strong>rotten</strong> using deep learning-based image recognition.
+          Perfect for <em>sorting systems</em>, <em>food quality checks</em>, and <em>reducing post-harvest loss</em>.
+        </p>
+      
+        <h3> Krishi AI</h3>
+        <p>
+          Your personalized agri-assistant that answers crop-specific questions based on your <strong>city</strong>, <strong>temperature</strong>, and <strong>humidity</strong>.
+          Get insights on:
+        </p>
+        <ul class="krishi-ai-list">
+          <li>Disease prevention & treatment </li>
+          <li>Best fertilizers to use </li>
+          <li>Yield improvement tips </li>
+          <li>Organic and modern farming practices </li>
+        </ul>
+    </div>
+    
+      
+
+</body>

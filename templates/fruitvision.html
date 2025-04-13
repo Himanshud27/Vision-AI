@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Vision</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    </style>
+</head>
+<body>
+    <h1 class="title">Fruit Vision</h1>
+
+    <div class="main">
+        <form method="POST" enctype="multipart/form-data" class="fruitvision-form">
+            <label for="image">Upload an image of a fruit:</label><br><br>
+            <input type="file" name="image" accept="image/*" required><br><br>
+            <input type="submit" value="Predict">
+        </form>
+
+        {% if prediction %}
+            <h3> Prediction Result:</h3>
+            <p style="font-size: 22px; color: #ffc107;"><strong>{{ prediction }}</strong></p>
+        {% endif %}
+    </div>
+
+    <div class="cursor-highlight" id="cursor"></div>
+   
+</body>
+</html>

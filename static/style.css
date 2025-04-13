@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    background-color: #0f0f0f;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0;
+   
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+h2 {
+    color: #f1f1f1;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #ffc107; 
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+p {
+    color: #cccccc;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+    width: 80%;
+    margin: 0 auto 20px;
+    line-height: 1.7;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.08); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 20px;
+    margin: 0 20px 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li,.navbar a {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    color: #ffc107;
+}
+
+.nav-list {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.krishi-ai-list {
+    color: #cccccc;
+    font-size: 18px;
+    font-weight: 400;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.fruitvision-form {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.fruitvision-form label {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.fruitvision-form input[type="file"] {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.fruitvision-form input[type="submit"] {
+    background-color: #ffc107;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.fruitvision-form input[type="submit"]:hover {
+    background-color: #e0a800;
+}
+
+.krishiai-form {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    gap: 15px;
+    color: #ffffff;
+}
+
+.krishiai-form label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.krishiai-form input[type="text"],
+.krishiai-form input[type="number"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    outline: none;
+}
+
+.krishiai-form input[type="text"]::placeholder,
+.krishiai-form input[type="number"]::placeholder {
+    color: #ddd;
+}
+
+.krishiai-form button {
+    background-color: #ffc107;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.krishiai-form button:hover {
+    background-color: #e0a800;
+}
+
+.smartscan-form {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    gap: 15px;
+    color: #ffffff;
+}
+
+.smartscan-form input[type="file"] {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.smartscan-form button {
+    background-color: #ffc107;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.smartscan-form button:hover {
+    background-color: #e0a800;
+}
+
+.smartscan-form p {
+    color: #cccccc;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        margin: 0 10px 30px;
+        border-radius: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar li {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .fruitvision-form,
+    .krishiai-form,
+    .smartscan-form {
+        width: 100%;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .fruitvision-form input[type="submit"],
+    .krishiai-form button,
+    .smartscan-form button {
+        width: 100%;
+    }
+
+    .krishiai-form input,
+    .smartscan-form input,
+    .fruitvision-form input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    p {
+        width: 95%;
+        font-size: 16px;
+    }
+}
