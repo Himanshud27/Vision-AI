@@ -49,6 +49,7 @@ p {
     font-style: normal;
     text-align: center;
     color: #ffffff;
+    margin-top: 50px;
 }
 
 .navbar {
@@ -101,8 +102,8 @@ p {
 
 .fruitvision-form {
     background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(27px);
+    -webkit-backdrop-filter: blur(27px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 30px;
@@ -111,6 +112,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -118,13 +120,14 @@ p {
     font-size: 18px;
     color: #ffffff;
     font-weight: 600;
-    margin-bottom: 15px;
+    
 }
 
 .fruitvision-form input[type="file"] {
+    margin-left: 50px;
     font-size: 16px;
     color: #e0e0e0;
-    margin-bottom: 20px;
+    
 }
 
 .fruitvision-form input[type="submit"] {
@@ -141,6 +144,7 @@ p {
 
 .fruitvision-form input[type="submit"]:hover {
     background-color: #e0a800;
+    
 }
 
 .krishiai-form {
@@ -150,13 +154,14 @@ p {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 30px;
-    width: 400px;
+    width: 550px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    gap: 15px;
+    margin-top: 50px;
+    gap: 7px;
     color: #ffffff;
 }
 
@@ -188,9 +193,12 @@ p {
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 10px;
+    width: 50%;
     border: none;
     cursor: pointer;
+    align-self: center;
     transition: background-color 0.3s ease;
+
 }
 
 .krishiai-form button:hover {
@@ -199,8 +207,8 @@ p {
 
 .smartscan-form {
     background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(27px);
+    -webkit-backdrop-filter: blur(27px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 30px;
@@ -245,6 +253,39 @@ p {
     font-size: 18px;
 }
 
+.krishi-background {
+    background-image: url("../static/Backgroundkisan.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.fruitvision-background {
+    background-image: url("../static/backgroundfruit.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.vision-background{
+    background-image: url("../static/backgroundindex.jpeg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    backdrop-filter: blur(4px);
+}
+.smartscan-background{
+    background-image: url("../static/backgroundsmartscan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    opacity:  1;
+   
+}
 
 
 
@@ -275,7 +316,7 @@ p {
     .fruitvision-form,
     .krishiai-form,
     .smartscan-form {
-        width: 100%;
+        width: 80%;
         padding: 20px;
         border-radius: 15px;
     }

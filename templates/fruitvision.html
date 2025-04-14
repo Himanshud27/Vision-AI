@@ -9,12 +9,24 @@
         @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
     </style>
 </head>
-<body>
+<body class="fruitvision-background">
+    <div class="navbar">
+        <ul class="nav-list">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            
+            <li><a href="{{ url_for('fruitvision') }}">Fruit Vision</a></li>
+            <li><a href="{{ url_for('krishiai') }}">Krishi AI</a></li>
+            <li><a href="{{ url_for('smartscan') }}">Smart Scan Product</a></li>
+
+        </ul>
+
+     
+    </div>
     <h1 class="title">Fruit Vision</h1>
 
     <div class="main">
         <form method="POST" enctype="multipart/form-data" class="fruitvision-form">
-            <label for="image">Upload an image of a fruit:</label><br><br>
+            <label for="image" class="UP">Upload an image of a fruit :</label><br><br>
             <input type="file" name="image" accept="image/*" required><br><br>
             <input type="submit" value="Predict">
         </form>

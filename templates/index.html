@@ -9,12 +9,12 @@
         </style>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
+<body class="vision-background">
     <h1 class="title">Vision AI</h1>
     <!------------Nav Bar------------>
     <div class="navbar">
         <ul class="nav-list">
-            <li>Home</li>
+          <li><a href="{{ url_for('home') }}">Home</a></li>
             
             <li><a href="{{ url_for('fruitvision') }}">Fruit Vision</a></li>
             <li><a href="{{ url_for('krishiai') }}">Krishi AI</a></li>

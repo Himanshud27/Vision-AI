@@ -9,7 +9,18 @@
         @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
     </style>
 </head>
-<body>
+<body class="smartscan-background">
+    <div class="navbar">
+    <ul class="nav-list">
+        <li><a href="{{ url_for('home') }}">Home</a></li>     
+        <li><a href="{{ url_for('fruitvision') }}">Fruit Vision</a></li>
+        <li><a href="{{ url_for('krishiai') }}">Krishi AI</a></li>
+        <li><a href="{{ url_for('smartscan') }}">Smart Scan Product</a></li>
+
+    </ul>
+
+ 
+</div>
     <h1> Smart Scan Product</h1>
     <form method="POST" enctype="multipart/form-data" class="smartscan-form">
         <input type="file" name="image" accept="image/*" required>
